@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="icon/iconecalculadora.png" type="image/x-icon">
+</head>
+
+<body>
+
+<script src="myscript.js"></script>
+
+<div class="topbar">
+
+    <div class="itens"> 
+        
+        <a href="index.html"><img src="icon/iconecalculadora.png" alt="logo do site" width="50" height="50" class="siteicon"></a>
+        <ul class="itemlist"> 
+
+            <li class="listelement"> 
+
+                <a href="https://www.linkedin.com/in/eduardo-reche-martins-59ba252a9/" class="extrn" target="_blank">Sobre mim</a> 
+
+            </li>
+
+            <li class="listelement">
+
+                <a href="https://github.com/RecheEduardo" class="extrn" target="_blank">Github</a> 
+
+            </li>
+                    
+        </ul>
+    </div>
+
+</div>
+
+<br />
+
+<div class="container">
+
+    <div class="title">
+        <h1>Calculadora de IMC</h1>
+        <p>Índice de Massa Corporal</p>     
+    </div>
+
+    <div class="innercenter">
+
+        <p class="tutorial">Para o cálculo, digite sua altura em metros (m) e seu peso em quilogramas (Kg)</p>
+
+        <br />
+
+        <div class="inputs">
+
+            <input type="number" id="number1" placeholder="Altura" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" />
+            <label class="example">&nbspEx: 1,86</label>
+
+        </div>
+
+        <br /> 
+
+        <div class="inputs">
+
+        <input type="number" id="number2" placeholder="Peso" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" />
+        <label class="example">&nbspEx: 80,9</label>
+
+        </div>
+
+        <br /> 
+
+        <button onclick="somar()"><strong>Calcular</strong></button>
+
+        <br />
+
+        <h2 id="result"></h2>
+
+    </div>
+
+</div>
+</body>
+</html>

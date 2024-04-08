@@ -146,8 +146,8 @@ a {
 
 .extrn {
     float: right;
-    padding-left: 30px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 10px;
     transition: 0.3s;
 }
 
@@ -195,7 +195,8 @@ a {
     box-shadow: 0.7rem 0.7rem rgb(39, 24, 99);
     background-color: rgb(67, 48, 161);
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 6.5rem;
+    margin-bottom: 5rem;
 }
 
 .title {
@@ -263,12 +264,13 @@ a {
 
     .container {
 
-        width: 60vw;
+        margin-top: 5rem;
+        width: 65vw;
     }
 
     .innercenter {
 
-        width: 60vw;
+        width: 65vw;
     }
 
     input {
@@ -294,10 +296,26 @@ a {
 
     }
 
-    #result {
+    #checkimc {
 
-        font-size: 14px;
+        font-size: 12pt;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+}
+
+@media(max-width:389px) {
+
+    body {
+        zoom: 100%;
+    }
+
+    .container {
+        margin-top: 5rem;
+    }
+
+    .inputs{
+        word-break: keep-all;
     }
 }

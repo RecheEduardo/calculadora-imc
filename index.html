@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1b1046">
     <link rel="stylesheet" href="style.css">
     <title>Calculadora de IMC</title>
-    <link rel="shortcut icon" href="iconecalculadora.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon/iconecalculadora.png" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 
     <div class="itens"> 
         
-        <a href="index.html"><img src="iconecalculadora.png" alt="logo do site" width="50" height="50" class="siteicon"></a>
+        <a href="index.html"><img src="icon/iconecalculadora.png" alt="logo do site" width="50" height="50" class="siteicon"></a>
         <ul class="itemlist"> 
 
             <li class="listelement"> 
@@ -52,8 +53,8 @@
 
         <div class="inputs">
 
-            <input type="number" id="number1" placeholder="Altura" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" />
-            <label class="example">&nbspEx: 1,86</label>
+            <input type="number" id="number1" placeholder="Altura" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" autofocus/>
+            <label class="example">&nbspEx:&nbsp1,86</label>
 
         </div>
 
@@ -62,7 +63,7 @@
         <div class="inputs">
 
         <input type="number" id="number2" placeholder="Peso" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" />
-        <label class="example">&nbspEx: 80,9</label>
+        <label class="example">&nbspEx:&nbsp80,9</label>
 
         </div>
 
@@ -70,11 +71,12 @@
 
         <button onclick="somar()"><strong>Calcular</strong></button>
 
-        <br />
-
         <h2 id="result"></h2>
 
+        <p id="checkimc"></p>
+
         <script src="myscript.js"></script>
+
     </div>
 
 </div>

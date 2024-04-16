@@ -1,4 +1,4 @@
-# Calculadora do Índice de Massa Corporal (IMC) 🏋🏻‍♀️
+<h1 align="center">Calculadora do Índice de Massa Corporal (IMC) 🏋🏻‍♀️</h1>
 <div>
   <p align="center"><strong>Projeto com HTML, CSS e interatividade JavaScript para cálculo do Índice de Massa Corporal (IMC).</strong></p>
 
